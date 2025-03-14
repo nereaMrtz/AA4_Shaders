@@ -50,11 +50,12 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _Fresnel_Power: 0.6
-    - _Offset: 0.47
+    - _Fresnel_Power: 0.91
+    - _Offset: 0.54
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Speed: 0.05
     - _SrcBlend: 5
     - _Surface: 1
     - _WorkflowMode: 1
