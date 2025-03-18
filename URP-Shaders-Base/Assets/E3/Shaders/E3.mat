@@ -63,7 +63,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Blend: 10
+    - _Blend: 116.5
     - _DEBUG: 0
     - _NormalStrength: 1
     - _QueueControl: 0
@@ -74,12 +74,12 @@ Material:
     - _SnowMin: 0.29
     - _SnowNormalScale: 100
     - _SnowNormalStrength: 0.25
-    - _SnowSmoothness: 0.02
-    - _SnowSoftness: 0.05
-    - _SnowStart: 0.6
+    - _SnowSmoothness: 0
+    - _SnowSoftness: 0
+    - _SnowStart: 0.358
     - _Tile: 0.75
     m_Colors:
-    - _Color: {r: 0.4245283, g: 0.32635266, b: 0.28301886, a: 1}
-    - _SnowColor: {r: 0.95, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.41509432, g: 0.20477034, b: 0, a: 1}
+    - _SnowColor: {r: 1, g: 1, b: 1, a: 1}
     - _SnowRemap: {r: -10, g: 5, b: 0, a: 0}
   m_BuildTextureStacks: []
