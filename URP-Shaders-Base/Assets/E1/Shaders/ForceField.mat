@@ -50,8 +50,8 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _Fresnel_Power: 0.91
-    - _Offset: 0.54
+    - _Fresnel_Power: 0.79
+    - _Offset: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -63,7 +63,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Emmision: {r: 0, g: 1.1901983, b: 1.4980392, a: 1}
+    - _Emmision: {r: 0, g: 1.3501836, b: 4.237095, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2198309219975815368
