@@ -134,11 +134,11 @@ Material:
     - _RockSmoothness: 1000
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SnowAmount: 0.414
+    - _SnowAmount: -1
     - _SnowHeight: 0
     - _SnowHeight_1: -1
     - _SnowSmoothness: 1000
-    - _SnowSoftness: 1
+    - _SnowSoftness: 0
     - _SnowStart: 1
     - _SnowThreshold: -1
     - _SpecularHighlights: 1
