@@ -50,8 +50,8 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
-    - _Fresnel_Power: 0.79
-    - _Offset: 0.3
+    - _Fresnel_Power: 1.03
+    - _Offset: 0.54
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -62,6 +62,7 @@ Material:
     - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 0
+    - _scanline: 220
     m_Colors:
     - _Emmision: {r: 0, g: 1.3501836, b: 4.237095, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
