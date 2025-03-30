@@ -19,8 +19,7 @@ void HeightBlend_float(
     outMasks = float3(0.0, 0.0, 0.0); // Inicializa outMasks
 
     // Calcular la diferencia de alturas
-    float heightDiff = heightA - heightB;
-    
+    float heightDiff = abs(heightB - heightA);
     // Aplicar smoothstep para suavizar el blending basado en altura
     float blendWeight = smoothstep(0.0, 0.5, heightDiff);
     
