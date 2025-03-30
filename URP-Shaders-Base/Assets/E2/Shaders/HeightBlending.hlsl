@@ -2,26 +2,33 @@
 #define HLSL_CUSTOM
 
 void HeightBlend_float(
-    float blendFactor, // Overlay result
-    float heightA, float heightB, // Heights
-    float3 albedoA, float3 albedoB, // Albedo colors
-    float3 normalA, float3 normalB, // Normals
-    float3 masksA, float3 masksB, // Masks (Metallic, AO, Smoothness)
-    
-    out float3 outAlbedo, // Albedo output
-    out float3 outNormal, // Normal output
-    out float3 outMasks // Masks output
+    float blendFactor, 
+    float heightA, float heightB,
+    float3 albedoA, float3 albedoB, 
+    float3 normalA, float3 normalB, 
+    float3 masksA, float3 masksB, 
+    float blendPower,
+
+    out float3 outAlbedo,
+    out float3 outNormal, 
+    out float3 outMasks 
 )
 {
-    // Asegurar inicialización de los valores de salida
-    outAlbedo = float3(0.0, 0.0, 0.0); // Inicializa outAlbedo
-    outNormal = float3(0.0, 0.0, 1.0); // Normal en Tangent Space por defecto
-    outMasks = float3(0.0, 0.0, 0.0); // Inicializa outMasks
+    // Init valores
+    outAlbedo = float3(0.0, 0.0, 0.0); 
+    outNormal = float3(0.0, 0.0, 1.0); 
+    outMasks = float3(0.0, 0.0, 0.0); 
+
 
     // Calcular la diferencia de alturas
     float heightDiff = abs(heightB - heightA);
+
+    // Ajustar el valor de la diferencia de altura con el BlendPower para poder ajustar la simulacion con el slider
+    float adjustedHeightDiff = heightDiff * blendPower;
+
     // Aplicar smoothstep para suavizar el blending basado en altura
-    float blendWeight = smoothstep(0.0, 0.5, heightDiff);
+    // Aquí el valor ajustado se pasa de 0 a 1
+    float blendWeight = smoothstep(0.0, 1.0, adjustedHeightDiff);
     
     // Modificar el peso con el factor de Overlay
     blendWeight *= blendFactor;
